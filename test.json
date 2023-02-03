@@ -1,0 +1,43 @@
+{
+    "player": {
+        "name": "Asuna",
+        "tag": 1279,
+        "agentData": [{
+            "agentPlayed": "Jett",
+            "gunKills": 28, 
+            "abilityImpact": [
+                {
+                    "name": "Dash", 
+                    "kills": 6
+                },
+                {
+                    "name": "Bladestorm",
+                    "kills": 2
+                }
+            ]
+        }, {
+            "agentPlayed": "Raze",
+            "gunKills": 22,
+            "abilityImpact": [
+                {
+                    "name": "Nade",
+                    "kills": 1
+                },
+                {
+                    "name": "Rocket",
+                    "kills": 5
+                }
+            ]
+        }]
+    }
+}
+
+Agent -> id, agentName, Ability 1, Ability 2
+
+Player -> id, playerNameTag
+
+MatchData -> id, matchId, playerId(fk, Player, playerNameTag), agentName(fk, Agent, agentName), gunkills, ability1 kills, ability2 kills
+
+id, matchId, playerId, agentName, gunkills, ability1 kills, ability2 kills
+1,  1,       1,        Jett,      28,        6,             2
+2,  1,       2,        Raze,      22,        1,             5
